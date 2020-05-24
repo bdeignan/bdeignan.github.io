@@ -1,0 +1,54 @@
+sidebar:
+    about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    education: True # set to False if you want education in main section instead of in sidebar
+
+    # Profile information
+    name: Brian Deignan
+    tagline: Data Scientist
+
+jobs:
+- title: Senior Data Scientist
+  start-date: 01-01-2000
+    # end-date:
+    # desc: 
+
+- title: Data Scientist
+  start-date: 01-01-2000
+  # end-date:
+#   desc:
+
+- title: Associate Data Scientist
+  start-date: 01-01-2000
+    # end-date:
+    # desc:
+
+- title: Data Analyst
+  start-date: 01-01-2000
+  # end-date: 
+  # desc:
+
+# education:
+#     degree:
+#     school:
+#     start-date:
+#     end-date:
+
+#     degree:
+#     school:
+#     start-date:
+#     end-date:
+
+#     degree:
+#     school:
+#     start-date:
+#     end-date:
+
+# skills:
+#     programming-lang:
+#     statistics:
+#     machine-learning:
+
+# certificates:
+#     - title:
+#     link:
+

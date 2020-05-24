@@ -4,3 +4,8 @@
 
 layout: home
 ---
+
+Here's the [link to about]({% link about.markdown %})
+
+
+Here's the [link to blog]({% link blog.markdown %})
