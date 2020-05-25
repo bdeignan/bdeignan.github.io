@@ -7,48 +7,119 @@ sidebar:
     tagline: Data Scientist
 
 jobs:
-- title: Senior Data Scientist
-  start-date: 01-01-2000
-    # end-date:
-    # desc: 
+- employer: Morningstar
+  positions:
+  - title: Senior Data Scientist
+    start-date: 
+      month: Jan
+      year: 2020
+    end-date:
+      month: 
+      year: Present
+    location: Chicago, IL
+    desc: >-
+        Modeled intraday high-frequency financial time series data in Python. 
+        Developed regional equity risk models using Docker and PySpark.
 
-- title: Data Scientist
-  start-date: 01-01-2000
-  # end-date:
-#   desc:
+  - title: Data Scientist
+    start-date: 
+      month: Apr 
+      year: 2018
+    end-date:
+      month: Jan
+      year: 2020
+    location: Chicago, IL
+    desc: >-
+        Parsed intraday high-frequency financial market data into
+        limit order books using self-balancing trees in Python. 
+        Led efforts to derive insights and value from customer data 
+        for the Direct and Retirement Manager platforms.
 
-- title: Associate Data Scientist
-  start-date: 01-01-2000
-    # end-date:
-    # desc:
+  - title: Associate Data Scientist
+    start-date:
+      month: Jun
+      year: 2016
+    end-date:
+      month: Mar
+      year: 2018
+    location: Washington, D.C. & Chicago, IL
+    desc: >-
+        Trained and validated a stacked ensemble model in R that increased product adoption 
+        by 9% over five months through targeting potential customers using my model’s predictions.
+        Mapped desktop software users to our new generation of cloud product 
+        offerings by clustering usage data in scikit-learn.
+        Continued as scrum master for the data science team.
 
-- title: Data Analyst
-  start-date: 01-01-2000
-  # end-date: 
-  # desc:
+- employer: HelloWallet
+  positions:
+  - title: Data Analyst
+    start-date:
+      month: Nov
+      year: 2014
+    end-date:
+      month: Jun
+      year: 2016
+    location: Washington, D.C.
+    desc: >-
+        Built a random forest model in R to predict software product engagement and used variable importance measures to determine key drivers of engagement.
+        Maintained our MySQL research data warehouse using Pentaho Data Integration ETL tool.
+        Created interactive dashboards in Tableau for client and product teams.
+        I was also scrum master for the Agile data science team.
 
-# education:
-#     degree:
-#     school:
-#     start-date:
-#     end-date:
+education:
+- degree: Master's in Computer Science
+  school: University of Illinois
+  start-date:
+    month: Jan
+    year: 2019
+  end-date:
+    month: Aug
+    year: 2020
 
-#     degree:
-#     school:
-#     start-date:
-#     end-date:
+- degree: Master's in Economics
+  school: George Mason University
+  start-date:
+    month: Jan
+    year: 2012
+  end-date:
+    month: Aug
+    year: 2014
 
-#     degree:
-#     school:
-#     start-date:
-#     end-date:
+- degree: Bachelor's in Economics and Spanish
+  school: Western Kentucky University
+  start-date:
+    month: Aug
+    year: 2008
+  end-date:
+    month: May
+    year: 2012
 
-# skills:
-#     programming-lang:
-#     statistics:
-#     machine-learning:
+skills:
+    - skill: Programming
+      items: [Python, R, Java, SQL]
+    - skill: Technology
+      items: [Spark, PyTorch, Docker, Kubernetes, Amazon Web Services]
+    - skill: Statistics
+      items: [Bayesian Modeling, Times Series, Panel Data, Causal Inference]
+    - skill: Machine Learning
+      items: [Supervised, Unsupervised, Deep Learning, Dimensionality Reduction]
 
-# certificates:
-#     - title:
-#     link:
-
+certificates:
+- title: Object Oriented Programming in Java
+  org: Coursera
+  link: https://www.coursera.org/account/accomplishments/verify/DLF928VU4HQW
+- title: Deep Learning Specialization
+  org: Coursera
+  link: https://www.coursera.org/account/accomplishments/specialization/MCS5PZAK8992
+- title: "Bayesian Statistics: From Concept to Data Analysis"
+  org: Coursera
+  link: https://www.coursera.org/account/accomplishments/verify/E7K7ZF2SAA4B
+- title: "Data Manipulation at Scale: Systems and Algorithms"
+  org: Coursera
+  link: https://www.coursera.org/account/accomplishments/verify/F7EB2KKSCUSH
+- title: Distributed Machine Learning with Apache Spark
+  org: edX
+  link: https://courses.edx.org/certificates/f767dad9a1004c5f852ffe18a25b4e48
+- title:  Introduction to Apache Spark
+  org: edX
+  link: https://courses.edx.org/certificates/055140fa2eff4253adea38a22123d60c

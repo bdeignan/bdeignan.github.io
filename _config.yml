@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Brian Deignan 
+title: Brian Deignan
 email: brian.deignan@pm.me
 description: >- # this means to ignore newlines until "baseurl:"
   I'm a data scientist with experience in financial markets and 
@@ -32,6 +32,7 @@ github_username:  bdeignan
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
