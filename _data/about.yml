@@ -18,8 +18,8 @@ jobs:
       year: Present
     location: Chicago, IL
     desc: >-
-        Modeled intraday high-frequency financial time series data in Python. 
-        Developed regional equity risk models using Docker and PySpark.
+      Developed regional equity risk models and containerized our risk model Spark development
+      environments using Docker.
 
   - title: Data Scientist
     start-date: 
@@ -44,11 +44,12 @@ jobs:
       year: 2018
     location: Washington, D.C. & Chicago, IL
     desc: >-
-        Trained and validated a stacked ensemble model in R that increased product adoption 
-        by 9% over five months through targeting potential customers using my model’s predictions.
-        Mapped desktop software users to our new generation of cloud product 
-        offerings by clustering usage data in scikit-learn.
-        Continued as scrum master for the data science team.
+        Trained, validated and deployed a stacked ensemble model in R that increased product adoption 
+        by 9 percent over five months. Used hierarchical clustering on app usage data to map desktop software 
+        users to new personas for migration to our cloud product.
+        Scrum master for the data science team.
+
+# over five months through targeting potential customers using my model’s predictions
 
 - employer: HelloWallet
   positions:
@@ -61,10 +62,10 @@ jobs:
       year: 2016
     location: Washington, D.C.
     desc: >-
-        Built a random forest model in R to predict software product engagement and used variable importance measures to determine key drivers of engagement.
-        Maintained our MySQL research data warehouse using Pentaho Data Integration ETL tool.
-        Created interactive dashboards in Tableau for client and product teams.
-        I was also scrum master for the Agile data science team.
+        Discovered key drivers of engagement that were used to make product decisions 
+        by training a random forest classifier in R and analyzing variable importance.
+        Responsible for ETL and maintenance of analytics team's MySQL data warehouse.
+        Created external-facing interactive dashboards in Tableau that reached 20+ enterprise clients.
 
 education:
 - degree: Master's in Computer Science
