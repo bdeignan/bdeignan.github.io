@@ -4,9 +4,15 @@ title: About
 permalink: /about
 ---
 
-<h2>Experience<hr size="4" noshade color="black" />
+I'm a data scientist living in Chicago. 
+I have experience in financial markets and software product analytics.
+I enjoy learning new technologies and creating reproducible data science projects.
+
+[`LinkedIn`](https://www.linkedin.com/in/brianmdeignan) [`GitHub`](https://github.com/bdeignan)
+
+<h3>Experience<hr size="4" noshade color="black" />
 {% for emp in site.data.about.jobs %}
-<h3>{{ emp.employer }}</h3>
+<h4>{{ emp.employer }}</h4>
 <hr/>
   {% for pos in emp.positions %}
     <h4>
@@ -20,7 +26,7 @@ permalink: /about
   <br/>
 {% endfor %}
 
-<h2>Education<hr size="4" noshade color="black" />
+<h3>Education<hr size="4" noshade color="black" />
 {% for item in site.data.about.education %}
   <h4>
     {{ item.degree }},
@@ -29,7 +35,7 @@ permalink: /about
   </h4>
 {% endfor %}
 
-<h2>Skills<hr size="4" noshade color="black" /></h2>
+<h3>Skills<hr size="4" noshade color="black" /></h3>
 
 <table>
 <colgroup>
@@ -48,7 +54,7 @@ permalink: /about
 </table>
 
 
-<h2>Certificates<hr size="4" noshade color="black" /></h2>
+<h3>Certificates<hr size="4" noshade color="black" /></h3>
 {% for item in site.data.about.certificates %}
 <ul style="line-height:80%">
   <li><a href="{{ item.link }}">{{ item.title }}</a>, {{ item.org }}</li>
