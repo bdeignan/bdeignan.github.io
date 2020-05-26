@@ -8,7 +8,7 @@ I'm a data scientist living in Chicago.
 I have experience in financial markets and software product analytics.
 I enjoy learning new technologies and creating reproducible data science projects.
 
-[`LinkedIn`](https://www.linkedin.com/in/brianmdeignan) [`GitHub`](https://github.com/bdeignan)
+<a href="mailto:brian.deignan@pm.me">`brian.deignan@pm.me`</a> [`LinkedIn`](https://www.linkedin.com/in/brianmdeignan) [`GitHub`](https://github.com/bdeignan)
 
 <h3>Experience<hr size="4" noshade color="black" />
 {% for emp in site.data.about.jobs %}
