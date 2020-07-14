@@ -16,5 +16,5 @@ learn some more things – an Andrew Ng course,
 the Elements of Statistical Learning and much more.
 
 Now I've been programming and analyzing data in Python and 
-R for a few years. You can find out more [**about me here**]({% link about.markdown %}). 
-And you can check out [**my blog**]({% link blog.markdown %}).
+R for a few years. You can find out more [**about me here**]({% link about.markdown %}) 
+or check out [**my blog**]({% link blog.markdown %}).

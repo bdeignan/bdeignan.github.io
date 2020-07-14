@@ -30,10 +30,10 @@ jobs:
       year: 2020
     location: Chicago, IL
     desc: >-
-        Parsed intraday high-frequency financial market data into
-        limit order books using self-balancing trees in Python. 
-        Led efforts to derive insights and value from customer data 
-        for the Direct and Retirement Manager platforms.
+        Built a parser in Python for high-frequency financial market
+        data that recreates the limit order book using self-balancing trees. 
+        Led efforts to derive insights and value from customer data for the 
+        Direct and Retirement Manager platforms. 
 
   - title: Associate Data Scientist
     start-date:
@@ -62,10 +62,10 @@ jobs:
       year: 2016
     location: Washington, D.C.
     desc: >-
-        Discovered key drivers of engagement that were used to make product decisions 
-        by training a random forest classifier in R and analyzing variable importance.
-        Responsible for ETL and maintenance of analytics team's MySQL data warehouse.
-        Created external-facing interactive dashboards in Tableau that reached 20+ enterprise clients.
+        Discovered key drivers of engagement that were used to make product 
+        decisions using variable importance measures in R. ETL and maintenance of 
+        the analytics team's MySQL data warehouse.
+        Created external-facing interactive dashboards in Tableau that reached 20+ enterprise clients. 
 
 education:
 - degree: Master's in Computer Science
@@ -99,7 +99,7 @@ skills:
     - skill: Programming
       items: [Python, R, Java, SQL]
     - skill: Technology
-      items: [Spark, PyTorch, Docker, Kubernetes, Amazon Web Services]
+      items: [Spark, PyTorch, Docker, Amazon Web Services]
     - skill: Statistics
       items: [Bayesian Modeling, Times Series, Panel Data, Causal Inference]
     - skill: Machine Learning
