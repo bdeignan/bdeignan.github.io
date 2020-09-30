@@ -18,8 +18,13 @@ jobs:
       year: Present
     location: Chicago, IL
     desc: >-
-      Developed regional equity risk models and containerized our risk model Spark development
-      environments using Docker.
+      &#8226; Reduced the onboarding time of risk model development from weeks to just a few days by dockerizing 
+      our Spark development environment
+      <br/>&#8226; Developed a new European equity risk model using Spark and delivered it a month ahead of schedule
+      <br/>&#8226; Built a statistical backtesting library in Python to evaluate our quantitative equity ratings systems
+      <br/>&#8226; Created an ETL pipeline in Python that extracts unstructured real-time stock market data and transforms 
+      it into a relational format for Amazon Athena
+
 
   - title: Data Scientist
     start-date: 
@@ -30,10 +35,12 @@ jobs:
       year: 2020
     location: Chicago, IL
     desc: >-
-        Built a parser in Python for high-frequency financial market
-        data that recreates the limit order book using self-balancing trees. 
-        Led efforts to derive insights and value from customer data for the 
-        Direct and Retirement Manager platforms. 
+        &#8226; Built a parser of high-frequency financial market data in Python that recreated the state of 
+        the limit order book using self-balancing trees
+        <br/>&#8226; Predicted individual-level churn of hundreds of thousands retirement 
+        platform customers using random survival forests
+        <br/>&#8226; Led four quant team apprentice and intern projects to derive customer insights from our retirement platform data
+        <br/>&#8226; Taught a one-day course on machine learning for our Quant Bootcamp program
 
   - title: Associate Data Scientist
     start-date:
@@ -44,12 +51,10 @@ jobs:
       year: 2018
     location: Washington, D.C. & Chicago, IL
     desc: >-
-        Trained, validated and deployed a stacked ensemble model in R that increased product adoption 
-        by 9 percent over five months. Used hierarchical clustering on app usage data to map desktop software 
-        users to new personas for migration to our cloud product.
-        Scrum master for the data science team.
-
-# over five months through targeting potential customers using my model’s predictions
+        &#8226; Built and A/B tested a stacked ensemble model in R that increased product adoption by 9% over five months
+        <br/>&#8226; Discovered most common software usage patterns by building an ETL process and analyzing usage log data 
+        using a graph database (Neo4j)
+        <br/>&#8226; Scrum master for the data science team
 
 - employer: HelloWallet
   positions:
@@ -62,10 +67,10 @@ jobs:
       year: 2016
     location: Washington, D.C.
     desc: >-
-        Discovered key drivers of engagement that were used to make product 
-        decisions using variable importance measures in R. ETL and maintenance of 
-        the analytics team's MySQL data warehouse.
-        Created external-facing interactive dashboards in Tableau that reached 20+ enterprise clients. 
+        &#8226; Researched and found the main driver of user engagement which was used to change our product onboarding experience
+        <br/>&#8226; Created external-facing interactive Tableau dashboards that reached 20+ enterprise clients
+        <br/>&#8226; Conducted a priori power calculations to ensure the validity and feasibility of our product’s A/B tests
+        <br/>&#8226; ETL and maintenance of the analytics team's MySQL data warehouse
 
 education:
 - degree: Master's in Computer Science
@@ -99,7 +104,7 @@ skills:
     - skill: Programming
       items: [Python, R, Java, SQL]
     - skill: Technology
-      items: [Spark, PyTorch, Docker, Amazon Web Services]
+      items: [Spark, Docker, Amazon Web Services]
     - skill: Statistics
       items: [Bayesian Modeling, Times Series, Panel Data, Causal Inference]
     - skill: Machine Learning
