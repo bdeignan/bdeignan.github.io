@@ -37,7 +37,7 @@ jobs:
     desc: >-
         &#8226; Built a parser of high-frequency financial market data in Python that recreated the state of 
         the limit order book using self-balancing trees
-        <br/>&#8226; Predicted individual-level churn of hundreds of thousands retirement 
+        <br/>&#8226; Predicted individual-level churn of hundreds of thousands of retirement 
         platform customers using random survival forests
         <br/>&#8226; Led four quant team apprentice and intern projects to derive customer insights from our retirement platform data
         <br/>&#8226; Taught a one-day course on machine learning for our Quant Bootcamp program
