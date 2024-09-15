@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
 vendor
+=======
+/.quarto/
+/_site/
+>>>>>>> fb61d4a (new quarto docs)
