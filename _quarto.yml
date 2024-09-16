@@ -3,12 +3,15 @@ project:
   output-dir: docs
 
 website:
-  title: "bdeignan.github.io"
+  title: "Brian Deignan"
+  description: "Brian Deignan is a data scientist with experience in econometrics, financial markets, time series, and NLP."
   navbar:
     left:
       - href: index.qmd
         text: Home
       - about.qmd
+      - href: https://bdeignan.github.io/blog/
+        text: Blog
 
 format:
   html:
