@@ -15,7 +15,7 @@ You can write regular markdown, include math like $E = mc^2$, and embed code wit
 
 Use triple backticks with a language name for syntax-highlighted code:
 
-```python
+```{python}
 import pandas as pd
 import numpy as np
 

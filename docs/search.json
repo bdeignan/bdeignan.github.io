@@ -53,7 +53,7 @@
     "href": "posts/2025-01-19-hello-world/index.html#code-blocks",
     "title": "Hello World: Your First Quarto Post",
     "section": "Code Blocks",
-    "text": "Code Blocks\nUse triple backticks with a language name for syntax-highlighted code:\nimport pandas as pd\nimport numpy as np\n\n# Create sample data\ndata = {\n    'Category': ['A', 'B', 'C', 'D'],\n    'Values': np.random.randint(10, 100, 4)\n}\ndf = pd.DataFrame(data)\ndf"
+    "text": "Code Blocks\nUse triple backticks with a language name for syntax-highlighted code:\n\nimport pandas as pd\nimport numpy as np\n\n# Create sample data\ndata = {\n    'Category': ['A', 'B', 'C', 'D'],\n    'Values': np.random.randint(10, 100, 4)\n}\ndf = pd.DataFrame(data)\ndf\n\n\n\n\n\n\n\n\nCategory\nValues\n\n\n\n\n0\nA\n53\n\n\n1\nB\n46\n\n\n2\nC\n69\n\n\n3\nD\n21"
   },
   {
     "objectID": "posts/2025-01-19-hello-world/index.html#executable-code",
