@@ -3,7 +3,6 @@ title: "Hello World: Your First Quarto Post"
 description: "A template post demonstrating Quarto's computational document features"
 date: "2025-01-19"
 categories: [tutorial, python]
-draft: true
 ---
 
 This is an example post to demonstrate Quarto blogging. Delete this post once you've created your own.

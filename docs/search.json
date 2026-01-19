@@ -4,7 +4,7 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "No matching items"
+    "text": "Hello World: Your First Quarto Post\n\n\n\n\n\n\ntutorial\n\n\npython\n\n\n\nA template post demonstrating Quarto’s computational document features\n\n\n\n\n\nJan 19, 2025\n\n\nBrian Deignan\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -33,6 +33,41 @@
     "title": "About",
     "section": "Skills",
     "text": "Skills\nLanguages: Python, SQL, PySpark\nAI/LLM: LangChain, Pydantic, RAG pipelines, vector databases (Qdrant), agents, structured extraction\nInfrastructure: Databricks, GCP, Spark, Docker, Git, Linux\nStatistics: Panel Data, Time Series, Causal Inference, Forecasting\nMachine Learning: Deep Learning, NLP, text classification"
+  },
+  {
+    "objectID": "posts/2025-01-19-hello-world/index.html",
+    "href": "posts/2025-01-19-hello-world/index.html",
+    "title": "Hello World: Your First Quarto Post",
+    "section": "",
+    "text": "This is an example post to demonstrate Quarto blogging. Delete this post once you’ve created your own."
+  },
+  {
+    "objectID": "posts/2025-01-19-hello-world/index.html#quarto-basics",
+    "href": "posts/2025-01-19-hello-world/index.html#quarto-basics",
+    "title": "Hello World: Your First Quarto Post",
+    "section": "Quarto Basics",
+    "text": "Quarto Basics\nYou can write regular markdown, include math like \\(E = mc^2\\), and embed code with syntax highlighting."
+  },
+  {
+    "objectID": "posts/2025-01-19-hello-world/index.html#code-blocks",
+    "href": "posts/2025-01-19-hello-world/index.html#code-blocks",
+    "title": "Hello World: Your First Quarto Post",
+    "section": "Code Blocks",
+    "text": "Code Blocks\nUse triple backticks with a language name for syntax-highlighted code:\nimport pandas as pd\nimport numpy as np\n\n# Create sample data\ndata = {\n    'Category': ['A', 'B', 'C', 'D'],\n    'Values': np.random.randint(10, 100, 4)\n}\ndf = pd.DataFrame(data)\ndf"
+  },
+  {
+    "objectID": "posts/2025-01-19-hello-world/index.html#executable-code",
+    "href": "posts/2025-01-19-hello-world/index.html#executable-code",
+    "title": "Hello World: Your First Quarto Post",
+    "section": "Executable Code",
+    "text": "Executable Code\nTo make code actually execute and show outputs (plots, tables, etc.), add curly braces around the language name: ```{python} instead of ```python.\nThis requires Jupyter. Install with: pip install jupyter"
+  },
+  {
+    "objectID": "posts/2025-01-19-hello-world/index.html#tips",
+    "href": "posts/2025-01-19-hello-world/index.html#tips",
+    "title": "Hello World: Your First Quarto Post",
+    "section": "Tips",
+    "text": "Tips\n\nJupyter notebooks: Drop .ipynb files directly into posts/ - they render automatically\nFreeze outputs: The freeze: true setting in _metadata.yml caches outputs so code doesn’t re-run on every build\nCategories: Use the categories field for filtering on the blog listing page\nDrafts: Set draft: true to hide posts from the listing (remove when ready to publish)"
   },
   {
     "objectID": "index.html",
