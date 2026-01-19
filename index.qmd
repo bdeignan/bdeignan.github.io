@@ -1,13 +1,10 @@
 ---
 title: "Brian Deignan"
-image: assets/headshot-blue.jpg
+image: assets/headshot-brutalist.png
 about:
     template: trestles
-    image-shape: round
+    image-shape: rectangle
     links:
-        - text: Email
-          icon: envelope
-          url: "mailto:public.baton135@passinbox.com"
         - text: LinkedIn
           icon: linkedin
           url: "https://www.linkedin.com/in/brianmdeignan"
