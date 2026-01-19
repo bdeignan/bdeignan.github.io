@@ -1,9 +1,72 @@
 [
   {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Principal Data Scientist | Dun & Bradstreet | 2022 – Present\n\nBuilding LLM-powered structured extraction pipelines for financial documents and filings\nLed development of an internal geospatial library on PySpark using Uber H3 for scalable geographic indexing\nDesigned and deployed a multiclass text classification system for 100M+ global cargo descriptions, improving Harmonized System Code accuracy by 30+ percentage points\nLed architecture of foreign influence risk analytics across 200M+ global entities, enabling custom logic via a Python/PySpark rules engine\n\nSenior Data Scientist | Morningstar | 2020 – 2022\n\nBuilt a modular portfolio backtesting library (NumPy/Pandas) for evaluating investment strategies across asset classes\nDeveloped a two-way fixed effects model to identify crowded equity factor trades using proprietary risk factors\n\nData Scientist | Morningstar | 2018 – 2020\n\nDelivered a churn prediction model using random survival forests for 100K+ retirement customers\nEngineered a limit order book reconstruction tool for high-frequency trading data with millisecond-level accuracy\n\nAssociate Data Scientist | Morningstar | 2016 – 2018\n\nLed development of a stacked ensemble propensity model, A/B tested across channels, achieving 9% uplift in adoption\nAnalyzed behavioral data in Neo4j to identify high-value user engagement patterns"
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "About",
+    "section": "",
+    "text": "Principal Data Scientist | Dun & Bradstreet | 2022 – Present\n\nBuilding LLM-powered structured extraction pipelines for financial documents and filings\nLed development of an internal geospatial library on PySpark using Uber H3 for scalable geographic indexing\nDesigned and deployed a multiclass text classification system for 100M+ global cargo descriptions, improving Harmonized System Code accuracy by 30+ percentage points\nLed architecture of foreign influence risk analytics across 200M+ global entities, enabling custom logic via a Python/PySpark rules engine\n\nSenior Data Scientist | Morningstar | 2020 – 2022\n\nBuilt a modular portfolio backtesting library (NumPy/Pandas) for evaluating investment strategies across asset classes\nDeveloped a two-way fixed effects model to identify crowded equity factor trades using proprietary risk factors\n\nData Scientist | Morningstar | 2018 – 2020\n\nDelivered a churn prediction model using random survival forests for 100K+ retirement customers\nEngineered a limit order book reconstruction tool for high-frequency trading data with millisecond-level accuracy\n\nAssociate Data Scientist | Morningstar | 2016 – 2018\n\nLed development of a stacked ensemble propensity model, A/B tested across channels, achieving 9% uplift in adoption\nAnalyzed behavioral data in Neo4j to identify high-value user engagement patterns"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About",
+    "section": "Education",
+    "text": "Education\nM.S. Computer Science | University of Illinois at Urbana-Champaign | 2020\nM.A. Economics | George Mason University | 2014\nB.A. Economics & Spanish | Western Kentucky University | 2012"
+  },
+  {
+    "objectID": "about.html#skills",
+    "href": "about.html#skills",
+    "title": "About",
+    "section": "Skills",
+    "text": "Skills\nLanguages: Python, SQL, PySpark\nAI/LLM: LangChain, Pydantic, RAG pipelines, vector databases (Qdrant), agents, structured extraction\nInfrastructure: Databricks, GCP, Spark, Docker, Git, Linux\nStatistics: Panel Data, Time Series, Causal Inference, Forecasting\nMachine Learning: Deep Learning, NLP, text classification"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Brian Deignan",
     "section": "",
-    "text": "I’m a data scientist based in Chicago with a background in econometrics and computer science. I’ve led a wide variety of data science projects, from building deep learning models to creating high-performance tools for financial market analysis.\nCurrently, I work on the Public Sector team at Dun & Bradstreet, where I come up with ways to improve our maritime shipping data using NLP and deep learning and build new capabilities to understand foreign influence on businesses.\nWhen I’m not writing Python, I’m usually running, playing soccer, cycling around town, or trying to get better at a new hobby I just picked up."
+    "text": "Principal Data Scientist based in Chicago. I lead AI initiatives and build systems for messy real-world data—LLM extraction pipelines, geospatial analytics at scale, NLP for global trade. Background in econometrics (George Mason) and computer science (UIUC).\nCurrently at Dun & Bradstreet, previously at Morningstar.\nOutside work: running, soccer, cycling, using em dashes before LLMs did."
+  },
+  {
+    "objectID": "CLAUDE.html",
+    "href": "CLAUDE.html",
+    "title": "CLAUDE.md",
+    "section": "",
+    "text": "This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.\n\n\nPersonal website for Brian Deignan built with Quarto and deployed to GitHub Pages.\n\n\n\n# Preview site locally with live reload\nquarto preview\n\n# Build/render the site (outputs to docs/)\nquarto render\n\n\n\n\nQuarto website project - Configuration in _quarto.yml\nOutput directory: docs/ (configured for GitHub Pages)\nSource files: .qmd files in root directory (index.qmd, about.qmd)\nTheme: United (Bootstrap-based)\nCustom styles: styles.css\nAssets: Images stored in assets/\nBlog: Hosted separately at https://bdeignan.github.io/blog/"
+  },
+  {
+    "objectID": "CLAUDE.html#project-overview",
+    "href": "CLAUDE.html#project-overview",
+    "title": "CLAUDE.md",
+    "section": "",
+    "text": "Personal website for Brian Deignan built with Quarto and deployed to GitHub Pages."
+  },
+  {
+    "objectID": "CLAUDE.html#build-commands",
+    "href": "CLAUDE.html#build-commands",
+    "title": "CLAUDE.md",
+    "section": "",
+    "text": "# Preview site locally with live reload\nquarto preview\n\n# Build/render the site (outputs to docs/)\nquarto render"
+  },
+  {
+    "objectID": "CLAUDE.html#architecture",
+    "href": "CLAUDE.html#architecture",
+    "title": "CLAUDE.md",
+    "section": "",
+    "text": "Quarto website project - Configuration in _quarto.yml\nOutput directory: docs/ (configured for GitHub Pages)\nSource files: .qmd files in root directory (index.qmd, about.qmd)\nTheme: United (Bootstrap-based)\nCustom styles: styles.css\nAssets: Images stored in assets/\nBlog: Hosted separately at https://bdeignan.github.io/blog/"
   }
 ]

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About – Brian Deignan</title>
+<title>claude – Brian Deignan</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -93,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
@@ -116,74 +150,50 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#experience" id="toc-experience" class="nav-link active" data-scroll-target="#experience">Experience</a></li>
-  <li><a href="#education" id="toc-education" class="nav-link" data-scroll-target="#education">Education</a></li>
-  <li><a href="#skills" id="toc-skills" class="nav-link" data-scroll-target="#skills">Skills</a></li>
+  <li><a href="#claude.md" id="toc-claude.md" class="nav-link active" data-scroll-target="#claude.md">CLAUDE.md</a>
+  <ul class="collapse">
+  <li><a href="#project-overview" id="toc-project-overview" class="nav-link" data-scroll-target="#project-overview">Project Overview</a></li>
+  <li><a href="#build-commands" id="toc-build-commands" class="nav-link" data-scroll-target="#build-commands">Build Commands</a></li>
+  <li><a href="#architecture" id="toc-architecture" class="nav-link" data-scroll-target="#architecture">Architecture</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">About</h1>
-</div>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="experience" class="level2">
-<h2 class="anchored" data-anchor-id="experience">Experience</h2>
-<p><strong>Principal Data Scientist</strong> | Dun &amp; Bradstreet | 2022 – Present</p>
-<ul>
-<li>Building LLM-powered structured extraction pipelines for financial documents and filings</li>
-<li>Led development of an internal geospatial library on PySpark using Uber H3 for scalable geographic indexing</li>
-<li>Designed and deployed a multiclass text classification system for 100M+ global cargo descriptions, improving Harmonized System Code accuracy by 30+ percentage points</li>
-<li>Led architecture of foreign influence risk analytics across 200M+ global entities, enabling custom logic via a Python/PySpark rules engine</li>
-</ul>
-<p><strong>Senior Data Scientist</strong> | Morningstar | 2020 – 2022</p>
-<ul>
-<li>Built a modular portfolio backtesting library (NumPy/Pandas) for evaluating investment strategies across asset classes</li>
-<li>Developed a two-way fixed effects model to identify crowded equity factor trades using proprietary risk factors</li>
-</ul>
-<p><strong>Data Scientist</strong> | Morningstar | 2018 – 2020</p>
-<ul>
-<li>Delivered a churn prediction model using random survival forests for 100K+ retirement customers</li>
-<li>Engineered a limit order book reconstruction tool for high-frequency trading data with millisecond-level accuracy</li>
-</ul>
-<p><strong>Associate Data Scientist</strong> | Morningstar | 2016 – 2018</p>
-<ul>
-<li>Led development of a stacked ensemble propensity model, A/B tested across channels, achieving 9% uplift in adoption</li>
-<li>Analyzed behavioral data in Neo4j to identify high-value user engagement patterns</li>
-</ul>
+<section id="claude.md" class="level1">
+<h1>CLAUDE.md</h1>
+<p>This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.</p>
+<section id="project-overview" class="level2">
+<h2 class="anchored" data-anchor-id="project-overview">Project Overview</h2>
+<p>Personal website for Brian Deignan built with <a href="https://quarto.org/">Quarto</a> and deployed to GitHub Pages.</p>
 </section>
-<section id="education" class="level2">
-<h2 class="anchored" data-anchor-id="education">Education</h2>
-<p><strong>M.S. Computer Science</strong> | University of Illinois at Urbana-Champaign | 2020</p>
-<p><strong>M.A.&nbsp;Economics</strong> | George Mason University | 2014</p>
-<p><strong>B.A. Economics &amp; Spanish</strong> | Western Kentucky University | 2012</p>
+<section id="build-commands" class="level2">
+<h2 class="anchored" data-anchor-id="build-commands">Build Commands</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Preview site locally with live reload</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Build/render the site (outputs to docs/)</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="skills" class="level2">
-<h2 class="anchored" data-anchor-id="skills">Skills</h2>
-<p><strong>Languages</strong>: Python, SQL, PySpark</p>
-<p><strong>AI/LLM</strong>: LangChain, Pydantic, RAG pipelines, vector databases (Qdrant), agents, structured extraction</p>
-<p><strong>Infrastructure</strong>: Databricks, GCP, Spark, Docker, Git, Linux</p>
-<p><strong>Statistics</strong>: Panel Data, Time Series, Causal Inference, Forecasting</p>
-<p><strong>Machine Learning</strong>: Deep Learning, NLP, text classification</p>
+<section id="architecture" class="level2">
+<h2 class="anchored" data-anchor-id="architecture">Architecture</h2>
+<ul>
+<li><strong>Quarto website project</strong> - Configuration in <code>_quarto.yml</code></li>
+<li><strong>Output directory</strong>: <code>docs/</code> (configured for GitHub Pages)</li>
+<li><strong>Source files</strong>: <code>.qmd</code> files in root directory (<code>index.qmd</code>, <code>about.qmd</code>)</li>
+<li><strong>Theme</strong>: United (Bootstrap-based)</li>
+<li><strong>Custom styles</strong>: <code>styles.css</code></li>
+<li><strong>Assets</strong>: Images stored in <code>assets/</code></li>
+<li><strong>Blog</strong>: Hosted separately at https://bdeignan.github.io/blog/</li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

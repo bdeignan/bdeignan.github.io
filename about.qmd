@@ -2,4 +2,46 @@
 title: "About"
 ---
 
+## Experience
 
+**Principal Data Scientist** | Dun & Bradstreet | 2022 – Present
+
+- Building LLM-powered structured extraction pipelines for financial documents and filings
+- Led development of an internal geospatial library on PySpark using Uber H3 for scalable geographic indexing
+- Designed and deployed a multiclass text classification system for 100M+ global cargo descriptions, improving Harmonized System Code accuracy by 30+ percentage points
+- Led architecture of foreign influence risk analytics across 200M+ global entities, enabling custom logic via a Python/PySpark rules engine
+
+**Senior Data Scientist** | Morningstar | 2020 – 2022
+
+- Built a modular portfolio backtesting library (NumPy/Pandas) for evaluating investment strategies across asset classes
+- Developed a two-way fixed effects model to identify crowded equity factor trades using proprietary risk factors
+
+**Data Scientist** | Morningstar | 2018 – 2020
+
+- Delivered a churn prediction model using random survival forests for 100K+ retirement customers
+- Engineered a limit order book reconstruction tool for high-frequency trading data with millisecond-level accuracy
+
+**Associate Data Scientist** | Morningstar | 2016 – 2018
+
+- Led development of a stacked ensemble propensity model, A/B tested across channels, achieving 9% uplift in adoption
+- Analyzed behavioral data in Neo4j to identify high-value user engagement patterns
+
+## Education
+
+**M.S. Computer Science** | University of Illinois at Urbana-Champaign | 2020
+
+**M.A. Economics** | George Mason University | 2014
+
+**B.A. Economics & Spanish** | Western Kentucky University | 2012
+
+## Skills
+
+**Languages**: Python, SQL, PySpark
+
+**AI/LLM**: LangChain, Pydantic, RAG pipelines, vector databases (Qdrant), agents, structured extraction
+
+**Infrastructure**: Databricks, GCP, Spark, Docker, Git, Linux
+
+**Statistics**: Panel Data, Time Series, Causal Inference, Forecasting
+
+**Machine Learning**: Deep Learning, NLP, text classification

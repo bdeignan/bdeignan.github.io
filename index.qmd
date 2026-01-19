@@ -16,12 +16,8 @@ about:
 comments: false
 ---
 
-::: {.column-page}
+Principal Data Scientist based in Chicago. I lead AI initiatives and build systems for messy real-world data—LLM extraction pipelines, geospatial analytics at scale, NLP for global trade. Background in econometrics (George Mason) and computer science (UIUC).
 
-I'm a data scientist based in Chicago with a background in econometrics and computer science. I’ve led a wide variety of data science projects, from building deep learning models to creating high-performance tools for financial market analysis. 
+Currently at Dun & Bradstreet, previously at Morningstar.
 
-Currently, I work on the Public Sector team at Dun & Bradstreet, where I come up with ways to improve our maritime shipping data using NLP and deep learning and build new capabilities to understand foreign influence on businesses.
-
-When I'm not writing Python, I'm usually running, playing soccer, cycling around town, or trying to get better at a new hobby I just picked up.
-
-:::
+Outside work: running, soccer, cycling, using em dashes before LLMs did.
