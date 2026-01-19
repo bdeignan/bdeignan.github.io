@@ -1,0 +1,16 @@
+{
+  "hash": "c749400ff0297e2240c1f706363784d1",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Hello World: Your First Quarto Post\"\ndescription: \"A template post demonstrating Quarto's computational document features\"\ndate: \"2025-01-19\"\ncategories: [tutorial, python]\n---\n\n\nThis is an example post to demonstrate Quarto blogging. Delete this post once you've created your own.\n\n## Quarto Basics\n\nYou can write regular markdown, include math like $E = mc^2$, and embed code with syntax highlighting.\n\n## Code Blocks\n\nUse triple backticks with a language name for syntax-highlighted code:\n\n::: {#99cef593 .cell execution_count=1}\n``` {.python .cell-code}\nimport pandas as pd\nimport numpy as np\n\n# Create sample data\ndata = {\n    'Category': ['A', 'B', 'C', 'D'],\n    'Values': np.random.randint(10, 100, 4)\n}\ndf = pd.DataFrame(data)\ndf\n```\n\n::: {.cell-output .cell-output-display execution_count=1}\n```{=html}\n<div>\n<style scoped>\n    .dataframe tbody tr th:only-of-type {\n        vertical-align: middle;\n    }\n\n    .dataframe tbody tr th {\n        vertical-align: top;\n    }\n\n    .dataframe thead th {\n        text-align: right;\n    }\n</style>\n<table border=\"1\" class=\"dataframe\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Category</th>\n      <th>Values</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>0</th>\n      <td>A</td>\n      <td>53</td>\n    </tr>\n    <tr>\n      <th>1</th>\n      <td>B</td>\n      <td>46</td>\n    </tr>\n    <tr>\n      <th>2</th>\n      <td>C</td>\n      <td>69</td>\n    </tr>\n    <tr>\n      <th>3</th>\n      <td>D</td>\n      <td>21</td>\n    </tr>\n  </tbody>\n</table>\n</div>\n```\n:::\n:::\n\n\n## Executable Code\n\nTo make code actually **execute** and show outputs (plots, tables, etc.), add curly braces around the language name: `` ```{python} `` instead of `` ```python ``.\n\nThis requires Jupyter. Install with: `pip install jupyter`\n\n## Tips\n\n- **Jupyter notebooks**: Drop `.ipynb` files directly into `posts/` - they render automatically\n- **Freeze outputs**: The `freeze: true` setting in `_metadata.yml` caches outputs so code doesn't re-run on every build\n- **Categories**: Use the `categories` field for filtering on the blog listing page\n- **Drafts**: Set `draft: true` to hide posts from the listing (remove when ready to publish)\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {
+      "include-in-header": [
+        "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js\" integrity=\"sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==\" crossorigin=\"anonymous\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js\" integrity=\"sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==\" crossorigin=\"anonymous\" data-relocate-top=\"true\"></script>\n<script type=\"application/javascript\">define('jquery', [],function() {return window.jQuery;})</script>\n"
+      ]
+    }
+  }
+}

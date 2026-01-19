@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Brian Deignan</title>
+<link>https://bdeignan.github.io/blog.html</link>
+<atom:link href="https://bdeignan.github.io/blog.xml" rel="self" type="application/rss+xml"/>
+<description>Brian Deignan is a data scientist with experience in econometrics, financial markets, time series, and NLP.</description>
+<generator>quarto-1.5.57</generator>
+<lastBuildDate>Mon, 19 Jan 2026 06:00:00 GMT</lastBuildDate>
+<item>
+  <title>Building a Brutalist Data Science Blog</title>
+  <dc:creator>Brian Deignan</dc:creator>
+  <link>https://bdeignan.github.io/posts/2026-01-19-building-a-brutalist-blog/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>2025 changed how I write code. AI-powered CLIs like Claude Code became my daily driver, and I found myself spending more time in terminals than ever before. So when I decided to rebuild my personal website, I wanted it to reflect that shift—a brutalist, TUI-inspired design that embraces the command line aesthetic.</p>
+<p>This post walks through the stack, design choices, and workflow I landed on.</p>
+<section id="the-stack" class="level2">
+<h2 class="anchored" data-anchor-id="the-stack">The Stack</h2>
+<ul>
+<li><strong><a href="https://quarto.org/">Quarto</a></strong> — Static site generator that renders Jupyter notebooks natively</li>
+<li><strong><a href="https://github.com/astral-sh/uv">uv</a></strong> — Fast Python package manager for dependencies</li>
+<li><strong>GitHub Pages</strong> — Free hosting, deploys from <code>docs/</code> folder</li>
+<li><strong>Jupyter</strong> — Write posts as notebooks with executable code</li>
+</ul>
+</section>
+<section id="design-choices" class="level2">
+<h2 class="anchored" data-anchor-id="design-choices">Design Choices</h2>
+<p>I went for a <strong>brutalist</strong> aesthetic—raw, bold, minimal decoration:</p>
+<ul>
+<li><strong>Sharp corners everywhere</strong> — No border-radius, hard edges</li>
+<li><strong>Hard drop shadows</strong> — That “sticker” look from neo-brutalism</li>
+<li><strong>Monospace headings</strong> — IBM Plex Mono for that terminal feel</li>
+<li><strong>Markdown-style prefixes</strong> — Headings show <code>#</code>, <code>##</code>, <code>###</code></li>
+<li><strong>Dark/light mode</strong> — Toggle in the navbar</li>
+<li><strong>Dithered profile photo</strong> — Matches the TUI vibe</li>
+</ul>
+</section>
+<section id="code-runs-here" class="level2">
+<h2 class="anchored" data-anchor-id="code-runs-here">Code Runs Here</h2>
+<p>The best part of Quarto + Jupyter: code cells execute and render inline. Here’s a quick demo:</p>
+<div id="code-demo" class="cell">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> pandas <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> pd</span>
+<span id="cb1-2"></span>
+<span id="cb1-3"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># What's in our pyproject.toml?</span></span>
+<span id="cb1-4"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> tomllib</span>
+<span id="cb1-5"><span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">with</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">open</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"../pyproject.toml"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"rb"</span>) <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> f:</span>
+<span id="cb1-6">    config <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> tomllib.load(f)</span>
+<span id="cb1-7"></span>
+<span id="cb1-8">deps <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> config[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"project"</span>][<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"dependencies"</span>]</span>
+<span id="cb1-9">pd.DataFrame({<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"dependency"</span>: deps})</span></code></pre></div>
+</div>
+</section>
+<section id="workflow" class="level2">
+<h2 class="anchored" data-anchor-id="workflow">Workflow</h2>
+<p>Writing a post is simple:</p>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Start Jupyter</span></span>
+<span id="cb2-2"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">uv</span> run jupyter lab _drafts/</span>
+<span id="cb2-3"></span>
+<span id="cb2-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Preview with live reload</span></span>
+<span id="cb2-5"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">uv</span> run quarto preview</span>
+<span id="cb2-6"></span>
+<span id="cb2-7"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># When ready, move to posts/</span></span>
+<span id="cb2-8"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mv</span> _drafts/my-post.ipynb posts/2026-01-19-my-post/index.ipynb</span></code></pre></div>
+<p>Need a new package? Just run <code>!uv add package-name</code> in a cell.</p>
+</section>
+<section id="whats-next" class="level2">
+<h2 class="anchored" data-anchor-id="whats-next">What’s Next</h2>
+<p>I plan to write about:</p>
+<ul>
+<li>LLM-powered structured extraction pipelines</li>
+<li>Geospatial analytics with H3</li>
+<li>Building with AI CLIs</li>
+</ul>
+<p>If you’re interested in the source code, it’s all on <a href="https://github.com/bdeignan/bdeignan.github.io">GitHub</a>.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>python</category>
+  <category>quarto</category>
+  <category>web-design</category>
+  <guid>https://bdeignan.github.io/posts/2026-01-19-building-a-brutalist-blog/</guid>
+  <pubDate>Mon, 19 Jan 2026 06:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

@@ -5,17 +5,20 @@ project:
 website:
   title: "Brian Deignan"
   description: "Brian Deignan is a data scientist with experience in econometrics, financial markets, time series, and NLP."
+  site-url: https://bdeignan.github.io
   navbar:
     left:
       - href: index.qmd
         text: Home
       - about.qmd
-      - href: https://bdeignan.github.io/blog/
+      - href: blog.qmd
         text: Blog
 
 format:
   html:
-    theme: united
+    theme:
+      light: flatly
+      dark: darkly
     css: styles.css
     toc: true
 

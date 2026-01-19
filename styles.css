@@ -1,1 +1,339 @@
-/* css styles */
+/* Terminal-inspired theme with light/dark mode support */
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap');
+
+/* Font setup */
+:root {
+  --body-font: 'Albert Sans', sans-serif;
+  --mono-font: 'IBM Plex Mono', ui-monospace, monospace;
+}
+
+/* ============================================
+   Color Palette - Light Mode (default)
+   ============================================ */
+:root {
+  --accent: #6a8c35;
+  --accent-hover: #5a7a2d;
+  --accent-dim: #8a9a6a;
+  --tag-color: #4a6fa5;
+  --tag-border: #6b8cae;
+  --code-bg: #f1f3f5;
+  --code-text: #495057;
+}
+
+/* ============================================
+   Color Palette - Dark Mode
+   ============================================ */
+[data-bs-theme="dark"] {
+  --accent: #b5c469;
+  --accent-hover: #c8d67c;
+  --accent-dim: #8a9a4a;
+  --tag-color: #7aa2c9;
+  --tag-border: #5e81ac;
+  --code-bg: #2d333b;
+  --code-text: #e6edf3;
+}
+
+/* ============================================
+   Base styles (both modes)
+   ============================================ */
+body {
+  font-family: var(--body-font);
+  line-height: 1.7;
+}
+
+/* Headings with terminal-style prefixes */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--mono-font);
+  font-weight: 600;
+}
+
+h1::before {
+  content: "# ";
+  color: var(--accent);
+}
+
+h2::before {
+  content: "## ";
+  color: var(--accent);
+}
+
+h3::before {
+  content: "### ";
+  color: var(--accent);
+}
+
+/* Links */
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+/* Profile image border */
+.about-image img,
+img.about-image {
+  border: 2px solid var(--accent);
+}
+
+/* Navbar active/hover states */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--accent) !important;
+}
+
+/* Blog listing */
+.quarto-listing-default .listing-item {
+  border-bottom: 1px dashed var(--bs-border-color);
+  padding: 1rem 0;
+}
+
+.listing-title {
+  color: var(--accent) !important;
+  font-weight: 600;
+}
+
+.listing-title:hover {
+  color: var(--accent-hover) !important;
+}
+
+/* Categories/tags - base */
+.listing-category,
+.quarto-category {
+  font-size: 0.75rem;
+  font-family: var(--mono-font);
+  font-weight: 500;
+}
+
+/* Categories/tags - Light mode */
+.listing-category,
+.quarto-category {
+  color: #6d28d9 !important;
+  border: 1px solid #8b5cf6 !important;
+  background-color: rgba(139, 92, 246, 0.12) !important;
+}
+
+/* Categories/tags - Dark mode */
+body.quarto-dark .quarto-category,
+body.quarto-dark .listing-category {
+  color: #d8b4fe !important;
+  border-color: #c084fc !important;
+  background-color: rgba(216, 180, 254, 0.15) !important;
+}
+
+/* Code blocks */
+pre {
+  border-radius: 4px;
+}
+
+code {
+  font-family: var(--mono-font);
+}
+
+/* Inline code styling - base */
+:not(pre)>code,
+p code,
+li code,
+td code {
+  padding: 0.15rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+/* Inline code - Light mode */
+:root :not(pre)>code,
+:root p code,
+:root li code {
+  background-color: #e9ecef !important;
+  color: #495057 !important;
+}
+
+/* Inline code - Dark mode */
+body.quarto-dark code:not(.sourceCode),
+body.quarto-dark :not(pre)>code,
+body.quarto-dark p code,
+body.quarto-dark li code {
+  background-color: #2d333b !important;
+  color: #e6edf3 !important;
+}
+
+/* Keep monospace for navbar and other terminal elements */
+.navbar,
+.navbar-brand,
+.nav-link,
+.listing-title,
+.listing-categories {
+  font-family: var(--mono-font);
+}
+
+/* Selection highlight */
+::selection {
+  background-color: var(--accent);
+  color: white;
+}
+
+[data-bs-theme="dark"] ::selection {
+  color: #0f1419;
+}
+
+/* Scrollbar (webkit) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bs-tertiary-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bs-secondary-bg);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-dim);
+}
+
+/* Table of contents */
+.sidebar nav[role="doc-toc"] a:hover,
+.sidebar nav[role="doc-toc"] a.active,
+#TOC a.active,
+#TOC a:hover,
+.toc-actions a:hover,
+nav#TOC a.active,
+.sidebar-navigation a.active {
+  color: var(--accent) !important;
+  border-left-color: var(--accent) !important;
+}
+
+/* Social link buttons */
+.about-links a:hover,
+.about-link:hover {
+  border-color: var(--accent) !important;
+  color: var(--accent) !important;
+}
+
+/* ============================================
+   Dark mode specific overrides
+   ============================================ */
+/* Target navbar via the header wrapper and body theme */
+body[data-bs-theme="dark"] #quarto-header,
+body[data-bs-theme="dark"] .navbar,
+html[data-bs-theme="dark"] #quarto-header,
+html[data-bs-theme="dark"] .navbar,
+.navbar[data-bs-theme="dark"] {
+  background-color: #222 !important;
+  border-bottom: 1px solid #444;
+}
+
+[data-bs-theme="dark"] .nav-footer {
+  background-color: var(--bs-body-bg) !important;
+  border-top: 1px solid var(--bs-border-color);
+}
+
+/* ============================================
+   Light mode specific overrides
+   ============================================ */
+[data-bs-theme="light"] .navbar {
+  border-bottom: 1px solid var(--bs-border-color);
+}
+
+[data-bs-theme="light"] .nav-footer {
+  border-top: 1px solid var(--bs-border-color);
+}
+
+/* Ensure good contrast for listing text in light mode */
+[data-bs-theme="light"] .listing-description,
+[data-bs-theme="light"] .listing-date,
+[data-bs-theme="light"] .listing-author {
+  color: var(--bs-secondary-color);
+}
+
+/* ============================================
+   Blinking cursor on titles (subtle flair)
+   ============================================ */
+.quarto-title-block .title::after {
+  content: "_";
+  animation: blink 1s step-end infinite;
+  color: var(--accent);
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* ============================================
+   Brutalist Overrides
+   ============================================ */
+
+/* Remove all rounded corners */
+*,
+*::before,
+*::after {
+  border-radius: 0 !important;
+}
+
+/* Profile image - thick border, hard shadow */
+.about-image img,
+img.about-image {
+  border: 3px solid var(--accent) !important;
+  box-shadow: 6px 6px 0 var(--accent-dim);
+}
+
+/* Social/link buttons - hard shadow */
+.about-links a,
+.about-link,
+.btn {
+  border: 2px solid currentColor !important;
+  box-shadow: 3px 3px 0 currentColor;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.about-links a:hover,
+.about-link:hover,
+.btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 currentColor;
+}
+
+/* Tags - hard shadow */
+.listing-category,
+.quarto-category {
+  border-width: 2px !important;
+  box-shadow: 2px 2px 0 currentColor;
+}
+
+/* Code blocks - thick border, hard shadow */
+pre {
+  border: 2px solid var(--bs-border-color) !important;
+  box-shadow: 4px 4px 0 var(--bs-border-color);
+}
+
+/* Inline code - sharper */
+:not(pre) > code {
+  border: 1px solid var(--bs-border-color);
+}
+
+/* Navbar - bottom border thicker */
+.navbar {
+  border-bottom-width: 2px !important;
+}
+
+/* Bolder heading weights */
+h1, h2, h3 {
+  font-weight: 700;
+}

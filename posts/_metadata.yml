@@ -1,0 +1,16 @@
+# Shared metadata for all posts in this directory
+# Individual posts can override these settings
+
+# Freeze computational output by default
+# This means code cells won't re-execute on every render
+# Set freeze: false in a post's frontmatter to re-run code
+freeze: true
+
+# Author info applied to all posts
+author: "Brian Deignan"
+
+# Execute Python code with Jupyter
+execute:
+  echo: true      # Show code cells in output
+  warning: false  # Hide warnings
+  message: false  # Hide messages
