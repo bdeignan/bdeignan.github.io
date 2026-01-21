@@ -12,7 +12,7 @@
 <generator>quarto-1.5.57</generator>
 <lastBuildDate>Mon, 19 Jan 2026 06:00:00 GMT</lastBuildDate>
 <item>
-  <title>Building a Brutalist Data Science Blog</title>
+  <title>Rebuilding My Data Science Blog</title>
   <dc:creator>Brian Deignan</dc:creator>
   <link>https://bdeignan.github.io/posts/2026-01-19-building-a-brutalist-blog/</link>
   <description><![CDATA[ 
@@ -46,7 +46,7 @@
 <section id="code-runs-here" class="level2">
 <h2 class="anchored" data-anchor-id="code-runs-here">Code Runs Here</h2>
 <p>The best part of Quarto + Jupyter: code cells execute and render inline. Here’s a quick demo:</p>
-<div id="code-demo" class="cell">
+<div id="code-demo" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">import</span> pandas <span class="im" style="color: #00769E;
@@ -66,7 +66,7 @@ font-style: inherit;">with</span> <span class="bu" style="color: null;
 background-color: null;
 font-style: inherit;">open</span>(<span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"../pyproject.toml"</span>, <span class="st" style="color: #20794D;
+font-style: inherit;">"../../pyproject.toml"</span>, <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"rb"</span>) <span class="im" style="color: #00769E;
 background-color: null;
@@ -85,6 +85,43 @@ font-style: inherit;">"dependencies"</span>]</span>
 <span id="cb1-9">pd.DataFrame({<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"dependency"</span>: deps})</span></code></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="3">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">dependency</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>duckdb&gt;=1.4.3</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>jupyter&gt;=1.1.1</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>matplotlib&gt;=3.10.8</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>numpy&gt;=2.4.1</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>pandas&gt;=2.3.3</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
 </div>
 </section>
 <section id="workflow" class="level2">
@@ -111,15 +148,6 @@ font-style: inherit;"># When ready, move to posts/</span></span>
 background-color: null;
 font-style: inherit;">mv</span> _drafts/my-post.ipynb posts/2026-01-19-my-post/index.ipynb</span></code></pre></div>
 <p>Need a new package? Just run <code>!uv add package-name</code> in a cell.</p>
-</section>
-<section id="whats-next" class="level2">
-<h2 class="anchored" data-anchor-id="whats-next">What’s Next</h2>
-<p>I plan to write about:</p>
-<ul>
-<li>LLM-powered structured extraction pipelines</li>
-<li>Geospatial analytics with H3</li>
-<li>Building with AI CLIs</li>
-</ul>
 <p>If you’re interested in the source code, it’s all on <a href="https://github.com/bdeignan/bdeignan.github.io">GitHub</a>.</p>
 
 

@@ -4,7 +4,7 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "Building a Brutalist Data Science Blog\n\n\n\n\n\n\npython\n\n\nquarto\n\n\nweb-design\n\n\n\nHow I rebuilt my personal site with Quarto, uv, and a terminal-inspired aesthetic for the AI CLI era\n\n\n\n\n\nJan 19, 2026\n\n\nBrian Deignan\n\n\n\n\n\n\nNo matching items"
+    "text": "Rebuilding My Data Science Blog\n\n\n\n\n\n\npython\n\n\nquarto\n\n\nweb-design\n\n\n\nHow I rebuilt my personal site with Quarto, uv, and a terminal-inspired aesthetic for the AI CLI era\n\n\n\n\n\nJan 19, 2026\n\n\nBrian Deignan\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -37,44 +37,37 @@
   {
     "objectID": "posts/2026-01-19-building-a-brutalist-blog/index.html",
     "href": "posts/2026-01-19-building-a-brutalist-blog/index.html",
-    "title": "Building a Brutalist Data Science Blog",
+    "title": "Rebuilding My Data Science Blog",
     "section": "",
     "text": "2025 changed how I write code. AI-powered CLIs like Claude Code became my daily driver, and I found myself spending more time in terminals than ever before. So when I decided to rebuild my personal website, I wanted it to reflect that shift—a brutalist, TUI-inspired design that embraces the command line aesthetic.\nThis post walks through the stack, design choices, and workflow I landed on."
   },
   {
     "objectID": "posts/2026-01-19-building-a-brutalist-blog/index.html#the-stack",
     "href": "posts/2026-01-19-building-a-brutalist-blog/index.html#the-stack",
-    "title": "Building a Brutalist Data Science Blog",
+    "title": "Rebuilding My Data Science Blog",
     "section": "The Stack",
     "text": "The Stack\n\nQuarto — Static site generator that renders Jupyter notebooks natively\nuv — Fast Python package manager for dependencies\nGitHub Pages — Free hosting, deploys from docs/ folder\nJupyter — Write posts as notebooks with executable code"
   },
   {
     "objectID": "posts/2026-01-19-building-a-brutalist-blog/index.html#design-choices",
     "href": "posts/2026-01-19-building-a-brutalist-blog/index.html#design-choices",
-    "title": "Building a Brutalist Data Science Blog",
+    "title": "Rebuilding My Data Science Blog",
     "section": "Design Choices",
     "text": "Design Choices\nI went for a brutalist aesthetic—raw, bold, minimal decoration:\n\nSharp corners everywhere — No border-radius, hard edges\nHard drop shadows — That “sticker” look from neo-brutalism\nMonospace headings — IBM Plex Mono for that terminal feel\nMarkdown-style prefixes — Headings show #, ##, ###\nDark/light mode — Toggle in the navbar\nDithered profile photo — Matches the TUI vibe"
   },
   {
     "objectID": "posts/2026-01-19-building-a-brutalist-blog/index.html#code-runs-here",
     "href": "posts/2026-01-19-building-a-brutalist-blog/index.html#code-runs-here",
-    "title": "Building a Brutalist Data Science Blog",
+    "title": "Rebuilding My Data Science Blog",
     "section": "Code Runs Here",
-    "text": "Code Runs Here\nThe best part of Quarto + Jupyter: code cells execute and render inline. Here’s a quick demo:\n\nimport pandas as pd\n\n# What's in our pyproject.toml?\nimport tomllib\nwith open(\"../pyproject.toml\", \"rb\") as f:\n    config = tomllib.load(f)\n\ndeps = config[\"project\"][\"dependencies\"]\npd.DataFrame({\"dependency\": deps})"
+    "text": "Code Runs Here\nThe best part of Quarto + Jupyter: code cells execute and render inline. Here’s a quick demo:\n\nimport pandas as pd\n\n# What's in our pyproject.toml?\nimport tomllib\nwith open(\"../../pyproject.toml\", \"rb\") as f:\n    config = tomllib.load(f)\n\ndeps = config[\"project\"][\"dependencies\"]\npd.DataFrame({\"dependency\": deps})\n\n\n\n\n\n\n\n\ndependency\n\n\n\n\n0\nduckdb&gt;=1.4.3\n\n\n1\njupyter&gt;=1.1.1\n\n\n2\nmatplotlib&gt;=3.10.8\n\n\n3\nnumpy&gt;=2.4.1\n\n\n4\npandas&gt;=2.3.3"
   },
   {
     "objectID": "posts/2026-01-19-building-a-brutalist-blog/index.html#workflow",
     "href": "posts/2026-01-19-building-a-brutalist-blog/index.html#workflow",
-    "title": "Building a Brutalist Data Science Blog",
+    "title": "Rebuilding My Data Science Blog",
     "section": "Workflow",
-    "text": "Workflow\nWriting a post is simple:\n# Start Jupyter\nuv run jupyter lab _drafts/\n\n# Preview with live reload\nuv run quarto preview\n\n# When ready, move to posts/\nmv _drafts/my-post.ipynb posts/2026-01-19-my-post/index.ipynb\nNeed a new package? Just run !uv add package-name in a cell."
-  },
-  {
-    "objectID": "posts/2026-01-19-building-a-brutalist-blog/index.html#whats-next",
-    "href": "posts/2026-01-19-building-a-brutalist-blog/index.html#whats-next",
-    "title": "Building a Brutalist Data Science Blog",
-    "section": "What’s Next",
-    "text": "What’s Next\nI plan to write about:\n\nLLM-powered structured extraction pipelines\nGeospatial analytics with H3\nBuilding with AI CLIs\n\nIf you’re interested in the source code, it’s all on GitHub."
+    "text": "Workflow\nWriting a post is simple:\n# Start Jupyter\nuv run jupyter lab _drafts/\n\n# Preview with live reload\nuv run quarto preview\n\n# When ready, move to posts/\nmv _drafts/my-post.ipynb posts/2026-01-19-my-post/index.ipynb\nNeed a new package? Just run !uv add package-name in a cell.\nIf you’re interested in the source code, it’s all on GitHub."
   },
   {
     "objectID": "index.html",
